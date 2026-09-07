@@ -37,10 +37,10 @@ const Register = () => {
             <div className="w-10 h-10 rounded-xl bg-gold-gradient flex items-center justify-center shadow-gold">
               <FiScissors size={20} className="text-dark-300" />
             </div>
-            <span className="text-xl font-bold text-gold-gradient">BarberElite</span>
+            <span className="text-xl font-bold text-slate-900 tracking-tight">Barber<span className="text-blue-600">X</span></span>
           </Link>
-          <h1 className="text-3xl font-black text-white mb-2">Create Account</h1>
-          <p className="text-gray-400 text-sm">Join BarberElite today — it's free</p>
+          <h1 className="text-3xl font-black text-slate-900 mb-2">Create Account</h1>
+          <p className="text-slate-500 text-sm">Join BarberX today — it's free</p>
         </div>
 
         {/* Role selector */}

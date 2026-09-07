@@ -41,30 +41,31 @@ const Landing = () => {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0" style={{
-            background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(212,175,55,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 80% 60% at 50% 0%, rgba(37,99,235,0.08) 0%, transparent 70%)',
           }} />
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-5 animate-float"
-            style={{ background: 'radial-gradient(circle, #D4AF37, transparent)' }} />
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full opacity-5 animate-float"
-            style={{ background: 'radial-gradient(circle, #D4AF37, transparent)', animationDelay: '3s' }} />
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full opacity-10 animate-float"
+            style={{ background: 'radial-gradient(circle, #2563EB, transparent)' }} />
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full opacity-10 animate-float"
+            style={{ background: 'radial-gradient(circle, #3B82F6, transparent)', animationDelay: '3s' }} />
         </div>
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-500 text-sm font-medium mb-8 animate-fade-in">
-            <FiScissors size={14} />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-200 bg-blue-50 text-blue-700 text-sm font-semibold mb-8 animate-fade-in shadow-sm">
+            <FiScissors size={14} className="text-blue-600" />
             Premium Barber Experience
           </div>
 
           {/* Headline */}
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight animate-slide-up">
+          <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-6 leading-tight animate-slide-up">
             Look Your{' '}
-            <span className="text-gold-gradient">Best.</span>
-            <br />Every Single Day.
+            <span className="text-blue-600">Best.</span>
+            <br />
+            <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Every Single Day.</span>
           </h1>
 
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            Book appointments with elite barbers in seconds. Premium cuts, seamless scheduling, and an experience worth talking about.
+          <p className="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto mb-10 animate-slide-up font-medium" style={{ animationDelay: '0.1s' }}>
+            Book appointments with elite barbers in seconds. <span className="text-slate-900 font-semibold">Premium cuts, seamless scheduling</span>, and an experience worth talking about.
           </p>
 
           {/* CTA Buttons */}
@@ -205,7 +206,7 @@ const Landing = () => {
                 Ready for Your <span className="text-gold-gradient">Best Look?</span>
               </h2>
               <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-                Join hundreds of satisfied customers. Book your appointment today and experience the BarberElite difference.
+                Join hundreds of satisfied customers. Book your appointment today and experience the BarberX difference.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link id="cta-register-btn" to="/register" className="btn-gold text-base px-8 py-4">

@@ -160,7 +160,7 @@ const CustomerDashboard = () => {
               <div className="glass-card p-12 text-center">
                 <div className="text-5xl mb-4">✂️</div>
                 <h3 className="text-white font-bold text-lg mb-2">No appointments yet</h3>
-                <p className="text-gray-400 mb-6">Book your first appointment and experience the BarberElite difference</p>
+                <p className="text-gray-400 mb-6">Book your first appointment and experience the BarberX difference</p>
                 <Link to="/customer/book" className="btn-gold">
                   <FiPlusCircle size={16} /> Book Your First Cut
                 </Link>

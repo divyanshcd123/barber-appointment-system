@@ -116,7 +116,7 @@ const BookAppointment = () => {
           key: process.env.REACT_APP_RAZORPAY_KEY_ID || 'rzp_test_mockKey',
           amount: order.amount,
           currency: order.currency,
-          name: 'BarberElite',
+          name: 'BarberX',
           description: selected.service.name,
           order_id: order.id,
           handler: async (response) => {
@@ -474,7 +474,7 @@ const BookAppointment = () => {
             </div>
             <div className="flex justify-between">
               <span className="text-gray-400">Pay To:</span>
-              <span className="text-white font-medium">BarberElite Salon</span>
+              <span className="text-slate-900 font-medium">BarberX Salon</span>
             </div>
             <div className="flex justify-between border-t border-white/5 pt-2 mt-2 font-bold text-sm">
               <span className="text-white">Amount:</span>

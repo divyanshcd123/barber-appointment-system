@@ -40,7 +40,7 @@ const AdminDashboard = () => {
         <div className="max-w-7xl mx-auto px-4 py-10">
           <div className="mb-10 animate-in">
             <h1 className="text-3xl font-black text-white mb-1">Admin Dashboard</h1>
-            <p className="text-gray-400">Complete overview of BarberElite operations</p>
+            <p className="text-slate-500">Complete overview of BarberX operations</p>
           </div>
 
           {/* Stats grid */}

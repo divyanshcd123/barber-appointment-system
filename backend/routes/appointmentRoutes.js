@@ -14,7 +14,7 @@ router.get('/', protect, authorize('admin'), getAllAppointments);
 router.post('/', protect, authorize('customer'), createAppointment);
 router.get('/my', protect, authorize('customer'), getMyAppointments);
 router.get('/barber', protect, authorize('barber'), getBarberAppointments);
-router.put('/:id/status', protect, updateAppointmentStatus);
+router.put('/:id/status', protect, authorize('customer', 'barber', 'admin'), updateAppointmentStatus);
 router.post('/:id/review', protect, authorize('customer'), submitReview);
 
 module.exports = router;

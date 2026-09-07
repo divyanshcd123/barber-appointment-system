@@ -66,16 +66,16 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-40 border-b border-white/5"
-      style={{ background: 'rgba(10,10,15,0.9)', backdropFilter: 'blur(20px)' }}>
+    <nav className="fixed top-0 left-0 right-0 z-40 border-b border-slate-200"
+      style={{ background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(20px)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl bg-gold-gradient flex items-center justify-center shadow-gold group-hover:shadow-gold-lg transition-all duration-300">
-              <FiScissors className="text-dark-300 w-5 h-5" />
+            <div className="w-9 h-9 rounded-xl bg-slate-900 text-white flex items-center justify-center shadow-md group-hover:bg-blue-600 transition-all duration-300">
+              <FiScissors className="w-5 h-5" />
             </div>
-            <span className="text-xl font-bold text-gold-gradient">BarberElite</span>
+            <span className="text-xl font-bold text-slate-900 tracking-tight">Barber<span className="text-blue-600">X</span></span>
           </Link>
 
           {/* Desktop Nav */}

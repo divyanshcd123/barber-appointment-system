@@ -3,23 +3,23 @@ import { FiScissors, FiInstagram, FiTwitter, FiFacebook, FiPhone, FiMail, FiMapP
 
 const Footer = () => {
   return (
-    <footer className="border-t border-white/5 pt-16 pb-8" style={{ background: 'rgba(5,5,8,0.95)' }}>
+    <footer className="border-t border-slate-200 pt-16 pb-8 bg-white text-slate-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 rounded-xl bg-gold-gradient flex items-center justify-center shadow-gold">
-                <FiScissors className="text-dark-300 w-5 h-5" />
+              <div className="w-9 h-9 rounded-xl bg-slate-900 text-white flex items-center justify-center shadow-md">
+                <FiScissors className="w-5 h-5" />
               </div>
-              <span className="text-xl font-bold text-gold-gradient">BarberElite</span>
+              <span className="text-xl font-bold text-slate-900 tracking-tight">Barber<span className="text-blue-600">X</span></span>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Premium barbershop experience. Book your appointment with our expert barbers and look your best every day.
+            <p className="text-slate-500 text-sm leading-relaxed mb-5">
+              Executive barbershop platform. Book your haircut with verified barbers.
             </p>
             <div className="flex gap-3">
               {[FiInstagram, FiTwitter, FiFacebook].map((Icon, i) => (
-                <a key={i} href="#" className="w-9 h-9 rounded-lg border border-white/10 flex items-center justify-center text-gray-400 hover:text-gold-500 hover:border-gold-500/30 transition-all duration-200">
+                <a key={i} href="#" className="w-9 h-9 rounded-lg border border-slate-200 flex items-center justify-center text-slate-500 hover:text-slate-900 hover:border-slate-400 transition-all duration-200">
                   <Icon size={16} />
                 </a>
               ))}
@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-slate-900 font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2.5">
               {[
                 { label: 'Home', to: '/' },
@@ -37,7 +37,7 @@ const Footer = () => {
                 { label: 'Services', to: '/#services' },
               ].map((link) => (
                 <li key={link.label}>
-                  <Link to={link.to} className="text-gray-400 hover:text-gold-500 text-sm transition-colors duration-200">
+                  <Link to={link.to} className="text-slate-500 hover:text-slate-900 text-sm transition-colors duration-200">
                     {link.label}
                   </Link>
                 </li>
@@ -47,11 +47,11 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Services</h4>
+            <h4 className="text-slate-900 font-semibold mb-4">Services</h4>
             <ul className="space-y-2.5">
               {['Classic Haircut', 'Fade & Taper', 'Beard Trim', 'Hot Towel Shave', 'Hair Coloring', 'Scalp Treatment'].map((s) => (
                 <li key={s}>
-                  <span className="text-gray-400 text-sm">{s}</span>
+                  <span className="text-slate-500 text-sm">{s}</span>
                 </li>
               ))}
             </ul>
@@ -59,19 +59,19 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
+            <h4 className="text-slate-900 font-semibold mb-4">Contact</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-3 text-sm text-gray-400">
-                <FiMapPin size={15} className="text-gold-500 shrink-0" />
+              <li className="flex items-center gap-3 text-sm text-slate-500">
+                <FiMapPin size={15} className="text-slate-900 shrink-0" />
                 <span>123 Main Street, Suite 100<br />New York, NY 10001</span>
               </li>
-              <li className="flex items-center gap-3 text-sm text-gray-400">
-                <FiPhone size={15} className="text-gold-500 shrink-0" />
+              <li className="flex items-center gap-3 text-sm text-slate-500">
+                <FiPhone size={15} className="text-slate-900 shrink-0" />
                 <span>+1 (555) 123-4567</span>
               </li>
-              <li className="flex items-center gap-3 text-sm text-gray-400">
-                <FiMail size={15} className="text-gold-500 shrink-0" />
-                <span>hello@barberelite.com</span>
+              <li className="flex items-center gap-3 text-sm text-slate-500">
+                <FiMail size={15} className="text-slate-900 shrink-0" />
+                <span>hello@barberx.com</span>
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ const Footer = () => {
 
         <div className="gold-divider" />
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
-          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} BarberElite. All rights reserved.</p>
+          <p className="text-slate-400 text-sm">© {new Date().getFullYear()} BarberX. All rights reserved.</p>
           <div className="flex gap-6">
             {['Privacy Policy', 'Terms of Service'].map((t) => (
               <a key={t} href="#" className="text-gray-500 hover:text-gold-500 text-sm transition-colors">{t}</a>
